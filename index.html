@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minimal AI</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Splide Carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Logo Animation -->
+  <div class="logo-container">
+    <img src="assets/logo.png" class="initial-logo" alt="Minimal AI Logo">
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="logo" onclick="scrollToTop()">
+      <img src="assets/logo.png" alt="Minimal AI Logo">
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#enterprise">Enterprise</a>
+      <a href="#case-study">Case Study</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <!-- Spline Robot in Background - Higher Position -->
+    <div class="robot-background">
+      <iframe src='https://my.spline.design/nexbotrobotcharacterconceptforpersonaluse-YVm3MXjZ1jcMBEGqYfRx9Yub/' frameborder='0'></iframe>
+    </div>
+    
+    <div class="overlay"></div>
+    
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="accent-box"></div>
+
+        <p>
+          100+ clients in the UAE & around the world
+        </p>
+
+        <h1>
+          <span class="gradient-text">Stay Ahead<br/>of the AI Race</span>
+        </h1>
+        
+
+        <div class="stats">
+          <div>
+            <span>125+</span>
+            <small>Clients</small>
+          </div>
+          <div>
+            <span>6+</span>
+            <small>Products</small>
+          </div>
+          <div>
+            <span>2</span>
+            <small>Countries</small>
+          </div>
+        </div>
+
+        <!-- Smaller Get Started Button -->
+        <a href="#contact" class="get-started-btn" id="getStartedBtn">
+          Get Started <span class="arrow">→</span>
+        </a>
+      </div>
+      
+      <div class="right-content">
+        <p>As one of the top AI companies in Dubai, we specialize in delivering end-to-end AI solutions aligned to your unique business requirements, from conversational AI chatbots and voice agents to AI-driven process automation, predictive analytics, document intelligence, and computer vision systems.</p>
+        <p>Our capabilities extend to data analytics and business intelligence, enabling organizations to uncover meaningful insights from complex datasets, powered by custom software and web development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors Section -->
+  <section class="sponsors-section" id="sponsors">
+    <h2 class="section-title">Trusted by <span class="gradient-text">Industry Leaders</span></h2>
+    
+    <div class="sponsors-carousel splide" id="sponsorsCarousel">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <!-- Sponsor logos would go here -->
+          <li class="splide__slide">
+            <img src="assets/Sponsor1.png" class="sponsor-logo" alt="Microsoft">
+          </li>
+          <li class="splide__slide">
+            <img src="assets/Sponsor2.png" class="sponsor-logo" alt="Netflix">
+          </li>
+          <li class="splide__slide">
+            <img src="assets/Sponsor3.png" class="sponsor-logo" alt="Apple">
+          </li>
+          <li class="splide__slide">
+            <img src="assets/Sponsor4.png" class="sponsor-logo" alt="Google">
+          </li>
+          <li class="splide__slide">
+            <img src="assets/Sponsor1.png" class="sponsor-logo" alt="Microsoft">
+          </li>
+          <li class="splide__slide">
+            <img src="assets/Sponsor2.png" class="sponsor-logo" alt="Netflix">
+          </li>
+          <li class="splide__slide">
+            <img src="assets/Sponsor3.png" class="sponsor-logo" alt="Apple">
+          </li>
+          <li class="splide__slide">
+            <img src="assets/Sponsor4.png" class="sponsor-logo" alt="Google">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section with Heading and Typing Animation - NOW WITH BACKGROUND AND VISIBLE HEADING -->
+  <section class="about-section" id="about">
+    <h2 class="about-heading"><span class="gradient-text">ABOUT</span></h2>
+    
+    <div class="about-container">
+      <div class="tablet-container">
+        <div class="tablet-shadow"></div>
+        <div class="tablet-frame">
+          <div class="tablet-screen">
+            <div class="video-container">
+              <!-- You can replace this with your actual AI video -->
+              <video class="about-video" autoplay muted loop playsinline>
+                <source src="assets/metric.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-content">
+        <h2 class="about-title">
+          <span class="gradient-text typing-animation" id="typingText">Transform Your Data into Actionable Intelligence</span>
+        </h2>
+        
+        <p class="about-description">
+          Transform Your Data into Actionable Intelligence with Power BI, Tableau & Alteryx. Uncover the answers to critical business questions, what happened, why and when it happened, and how to leverage emerging trends.
+        </p>
+        
+        <div class="tech-list">
+          <div class="tech-pill">Power BI</div>
+          <div class="tech-pill">Tableau</div>
+          <div class="tech-pill">Alteryx</div>
+          <div class="tech-pill">Data Analytics</div>
+          <div class="tech-pill">Business Intelligence</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dubai AI Seal Section (No background, no heading) -->
+  <section class="dubai-section" id="dubai">
+    <div class="dubai-container">
+      <!-- Left side: Dubai AI Seal Content -->
+      <div class="dubai-left">
+        <h2 class="dubai-title">
+          <span class="gradient-text">Recognized as a Dubai AI Seal Enterprise</span>
+        </h2>
+        
+        <p class="dubai-description">
+          Aleddo is officially recognized by the Government of Dubai with the Dubai AI Seal, under the Dubai centre for artificial intelligence (DCAI), a testament to our consistent delivery of impactful AI solutions and a proven track record of driving measurable transformation across both government and private sectors.
+        </p>
+        
+        <p class="dubai-description">
+          Our capabilities span across AI, business intelligence, and advanced analytics, Power BI and Tableau data visualization and data engineering, custom web and software development.
+        </p>
+      </div>
+      
+      <!-- Right side: Overlapping Review Images -->
+      <div class="dubai-right">
+        <!-- Review Image 1 -->
+        <div class="review-image">
+          <img src="assets/review1.webp" alt="Client Review 1">
+        </div>
+
+        <!-- Review Image 2 -->
+        <div class="review-image">
+          <img src="assets/review2.webp" alt="Client Review 2">
+        </div>
+
+        <!-- Review Image 3 -->
+        <div class="review-image">
+          <img src="assets/review3.webp" alt="Client Review 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enterprise Section (4 columns) -->
+  <section class="enterprise-section" id="enterprise">
+    <h2 class="section-title"><span class="gradient-text">ENTERPRISE</span></h2>
+    
+    <div class="enterprise-container">
+      <div class="enterprise-items">
+        <!-- CUSTOM AI SOLUTIONS -->
+        <div class="enterprise-item">
+          <h3><span class="gradient-text">CUSTOM AI SOLUTIONS</span></h3>
+          
+          <ul class="enterprise-list">
+            <li>Business Intelligence, Advanced Analytics & Data Engineering</li>
+            <li>AI Automation, Conversational AI Chatbots & Voice Agents</li>
+          </ul>
+          
+          <button class="view-more-btn" data-type="ai-solutions">
+            View more <span class="arrow">→</span>
+          </button>
+        </div>
+        
+        <!-- CUSTOM WEB & SOFTWARE DEVELOPMENT -->
+        <div class="enterprise-item">
+          <h3><span class="gradient-text">CUSTOM WEB & SOFTWARE DEVELOPMENT</span></h3>
+          
+          <ul class="enterprise-list">
+            <li>Custom Web Applications & Enterprise Software</li>
+            <li>Mobile App Development (iOS & Android)</li>
+            <li>E-commerce Solutions & CMS Development</li>
+          </ul>
+          
+          <button class="view-more-btn" data-type="web-development">
+            View more <span class="arrow">→</span>
+          </button>
+        </div>
+        
+        <!-- DATA ANALYTICS -->
+        <div class="enterprise-item">
+          <h3><span class="gradient-text">DATA ANALYTICS</span></h3>
+          
+          <ul class="enterprise-list">
+            <li>Advanced Data Analytics & Business Intelligence</li>
+            <li>Predictive Modeling & Machine Learning</li>
+            <li>Real-time Dashboards & Reporting</li>
+          </ul>
+          
+          <button class="view-more-btn" data-type="data-analytics">
+            View more <span class="arrow">→</span>
+          </button>
+        </div>
+        
+        <!-- CONSULTING SERVICES -->
+        <div class="enterprise-item">
+          <h3><span class="gradient-text">CONSULTING SERVICES</span></h3>
+          
+          <ul class="enterprise-list">
+            <li>AI Strategy & Digital Transformation</li>
+            <li>Technology Consulting & Implementation</li>
+            <li>Training & Support Services</li>
+          </ul>
+          
+          <button class="view-more-btn" data-type="consulting">
+            View more <span class="arrow">→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPDATED Case Study Section -->
+  <section class="case-study-section" id="case-study">
+    <div class="case-study-container">
+      <!-- Case Study Heading with Cursive Subtitle -->
+      <div class="case-study-heading" id="caseStudyHeading">
+        <h2 class="section-title">Case <span class="gradient-text">Study</span></h2>
+        <div class="cursive-subtitle">Proven Results Across Multiple Industries</div>
+      </div>
+      
+      <!-- Category Navigation -->
+      <div class="case-study-nav" id="caseStudyNav">
+        <button class="case-study-nav-btn active" data-category="government">Government</button>
+        <button class="case-study-nav-btn" data-category="banking">Banking</button>
+        <button class="case-study-nav-btn" data-category="real-estate">Real Estate</button>
+        <button class="case-study-nav-btn" data-category="automobile">Automobile</button>
+        <button class="case-study-nav-btn" data-category="insurance">Insurance</button>
+        <button class="case-study-nav-btn" data-category="manufacturing">Manufacturing</button>
+        <button class="case-study-nav-btn" data-category="audits-grc">Audit & GRC</button>
+      </div>
+      
+      <!-- Story Container -->
+      <div class="story-container">
+        <!-- Progress Bar -->
+        <div class="story-progress" id="storyProgress">
+          <div class="story-progress-bar"><div class="story-progress-fill"></div></div>
+          <div class="story-progress-bar"><div class="story-progress-fill"></div></div>
+          <div class="story-progress-bar"><div class="story-progress-fill"></div></div>
+          <div class="story-progress-bar"><div class="story-progress-fill"></div></div>
+          <div class="story-progress-bar"><div class="story-progress-fill"></div></div>
+          <div class="story-progress-bar"><div class="story-progress-fill"></div></div>
+          <div class="story-progress-bar"><div class="story-progress-fill"></div></div>
+        </div>
+        
+        <!-- Navigation Arrows -->
+        <button class="story-nav prev" id="storyPrev">‹</button>
+        <button class="story-nav next" id="storyNext">›</button>
+        
+        <!-- Story Contents - Updated with your provided content -->
+        <div class="story-content active" data-category="government">
+          <div class="story-category">GOVERNMENT</div>
+          <h2 class="story-title">
+            <span class="gradient-text">AI Powered Excise Goods Registration Platform</span>
+          </h2>
+          <p class="story-description">
+            We built an AI-powered excise goods registration platform that automates the manual process of extracting product details such as quantities, ingredients, and other attributes from product images and related documents, then performs verification and compliance checks on behalf of tax authorities, ensuring greater efficiency, accuracy, and compliance.
+          </p>
+          
+          <div class="story-subtitle">AI Powered Inspection Prediction System</div>
+          <p class="story-description">
+            For an entity working closely with the Dubai Municipality, we developed an AI powered solution that predicts which restaurants are most likely to miss grease trap cleanings in the current and upcoming month, enabling inspectors to plan targeted and efficient inspections. This improves compliance, reduces missed violations, and optimizes resource allocation.
+          </p>
+          <p class="story-description">
+            Using regression and classification models (Random Forest, XGBoost), time-series forecasting, and geospatial clustering with route optimization (Google OR-Tools), the system scores each outlet based on risk. Instead of relying on trial-and-error scheduling, inspection teams now have data-driven insights to prioritize visits and streamline operations.
+          </p>
+          
+          <div class="story-subtitle">AI Powered Automated Calling & Email Engagement System for a Leading Freezone</div>
+          <p class="story-description">
+            We built an end-to-end AI-powered engagement and sales automation platform that connects the entire customer journey. The system uses AI voice calls, intelligent email conversations, and real-time agent assistance to automate lead engagement. With RAG, LLM orchestration, and event-based scoring, it generates a Lead Readiness Index to prioritize high-value prospects and tailor follow-up sequences.
+          </p>
+          <p class="story-description">
+            The platform identifies buying signals, manages objections, and maintains consistent, data-driven communication across all channels. It also automates proposals, payment links, onboarding, and CRM updates. Built with LiveKit, Deepgram, GPT-4/Claude, ElevenLabs, and event-driven APIs, the solution boosts sales productivity, reduces manual work, and delivers a seamless AI-driven customer experience.
+          </p>
+        </div>
+        
+        <div class="story-content" data-category="banking">
+          <div class="story-category">BANKING</div>
+          <h2 class="story-title">
+            <span class="gradient-text">Transforming Analytics For A Leading Bank in the UAE</span>
+          </h2>
+          <p class="story-description">
+            We partnered with a leading UAE bank to streamline and enhance HR decision making by replacing manual Excel-based reporting with real-time Power BI dashboards.
+          </p>
+          <p class="story-description">
+            We built a centralized HR data warehouse integrating data from their HRMS, SAP systems, payroll, and compliance tools. This unified data powered interactive dashboards covering Emiratization, recruitment, performance, attendance, and training. With role-based access controls and automated data workflows, the bank's HR team now has accurate, real-time insights and significantly reduced reporting effort.
+          </p>
+          
+          <div class="story-subtitle">AI-Powered Document Processing & Workflow Automation</div>
+          <p class="story-description">
+            We partnered with a major UAE bank to eliminate manual document handling and accelerate internal processing by deploying an end-to-end AI automation solution.
+          </p>
+          <p class="story-description">
+            We built an intelligent document pipeline capable of extracting and classifying information from PDFs, scanned forms, emails, and Excel files used across departments. Using OCR, LLM-based classification, and custom extraction models, the system automatically identifies document types (KYC, bank statements, invoices, HR forms, compliance reports, etc.), validates the data, and pushes it into the bank's core workflow systems.
+          </p>
+          <p class="story-description">
+            Automated routing rules, approval triggers, and exception handling replaced slow manual processes. With secure role-based controls, audit trails, and seamless integration with existing banking applications, the bank now processes documents significantly faster with improved accuracy, reduced operational workload, and real-time visibility into all cases.
+          </p>
+        </div>
+        
+        <div class="story-content" data-category="real-estate">
+          <div class="story-category">REAL ESTATE</div>
+          <h2 class="story-title">
+            <span class="gradient-text">AI Research and Chatbot Platform for a Leading Developer</span>
+          </h2>
+          <p class="story-description">
+            We developed a secure, cloud-based AI research assistant that enables employees to query and interact with large organizational knowledge bases in a personalized, role specific manner. The solution uses Retrieval-Augmented Generation (RAG) to deliver accurate responses from uploaded documents and internal knowledge sources, with dedicated dashboards for departments like HR, Finance, and Legal.
+          </p>
+          <p class="story-description">
+            Built with React, FastAPI, Azure SQL, Blob Storage, and Cognitive Search, the platform supports multi-tenant architecture, where each business unit maintains its own isolated knowledge base and vector index, while admins retain centralized control. The system includes secure RBAC, section level access restrictions, and ingestion from PDFs, URLs, and SharePoint. Dashboards, reporting, and full UAT were completed before handover.
+          </p>
+          
+          <div class="story-subtitle">Duplicate Idea Detection System</div>
+          <p class="story-description">
+            We built an AI-powered duplicate idea detection engine for an internal idea submission portal on Joget. Using semantic similarity models (Sentence Transformers) and RAG pipelines, the system identifies meaningfully similar submissions, not just keyword matches, in real time. When a new idea resembles a previously submitted one, users are instantly alerted. This ensures higher-quality submissions, reduces redundancy, and improves innovation management across the organization.
+          </p>
+        </div>
+        
+        <div class="story-content" data-category="automobile">
+          <div class="story-category">AUTOMOBILE</div>
+          <h2 class="story-title">
+            <span class="gradient-text">Discount & Pricing Optimization Model</span>
+          </h2>
+          <p class="story-description">
+            We built a discount optimization system for one of the largest automotive companies, resulting in a 1.2% increase in volume sales.
+          </p>
+          <p class="story-description">
+            The solution combined time-series forecasting (XGBoost), price elasticity modeling taking into account the discount passthrough rate, and a simulation engine to test the possible change in volume on account of changing discount values. By replacing guesswork or trail and error method with data-driven insights, the company can now accurately forecast demand, understand customer price sensitivity, and choose the most effective discount strategies.
+          </p>
+        </div>
+        
+        <div class="story-content" data-category="insurance">
+          <div class="story-category">INSURANCE</div>
+          <h2 class="story-title">
+            <span class="gradient-text">Automated Claims Processing for a Leading Provider</span>
+          </h2>
+          <p class="story-description">
+            We built an end-to-end AI-powered claims automation system for a major insurance provider to process medical claims.
+          </p>
+          <p class="story-description">
+            The platform extracts information from diverse medical documents using OCR and Generative AI, validates it against policy terms, checks eligibility, scores risk, classifies the claim, and routes it to the correct queue, all without human intervention. This significantly reduces manual effort, improves accuracy, and accelerates claim processing by automatically matching diagnoses and procedures with policy guidelines.
+          </p>
+        </div>
+        
+        <div class="story-content" data-category="manufacturing">
+          <div class="story-category">MANUFACTURING</div>
+          <h2 class="story-title">
+            <span class="gradient-text">AI Powered Document Processing for Manufacturing</span>
+          </h2>
+          <p class="story-description">
+            We developed an OCR + AI solution to automatically extract technical specifications, such as lengths, dimensions, materials, and part numbers, from PDFs, Excel files, images, and handwritten notes. The system generates structured reports, categorizes data, and forwards it to relevant departments like production etc, eliminating manual entry and enhancing collaboration across engineering, procurement, and production teams.
+          </p>
+        </div>
+        
+        <div class="story-content" data-category="audits-grc">
+          <div class="story-category">AUDIT & GRC</div>
+          <h2 class="story-title">
+            <span class="gradient-text">AI-Driven Procurement Risk & Anomaly Detection</span>
+          </h2>
+          <p class="story-description">
+            We partnered with a major UAE retail chain to streamline procurement oversight and reduce financial leakage by implementing an AI-powered anomaly detection and vendor risk scoring platform.
+          </p>
+          <p class="story-description">
+            We deployed an intelligent analytics engine that scans purchase transactions, invoices, POs, and GRNs from their ERP in real time. Using machine learning based anomaly detection, the platform automatically flags abnormal pricing, duplicate invoices, quantity mismatches, and unusual charge patterns. For example, if an item normally purchased at AED 12 per unit is suddenly billed at AED 28, or if a PO and invoice show mismatched quantities, the system instantly highlights the discrepancy for review, preventing over billing and process gaps.
+          </p>
+          <p class="story-description">
+            We also built a dynamic vendor risk scoring model that continuously evaluates suppliers based on delivery timelines, product quality issues, historical audit findings, return rates, and payment behavior. The risk score updates automatically as new data flows in. For instance, a supplier with frequent late deliveries and repeated credit note adjustments may see their score rise from 40 to 82, while consistent improvement in on time performance lowers risk back into a safe range.
+          </p>
+          <p class="story-description">
+            With automated alerts, integrated dashboards, and unified data visibility across procurement, finance, and operations teams, the retail chain now proactively identifies risks, reduces operational leakages, and improves supplier performance, all powered by real-time AI insights.
+          </p>
+        </div>
+        
+        <!-- Story Indicator Dots -->
+        <div class="story-indicator" id="storyIndicator">
+          <div class="story-dot active" data-index="0"></div>
+          <div class="story-dot" data-index="1"></div>
+          <div class="story-dot" data-index="2"></div>
+          <div class="story-dot" data-index="3"></div>
+          <div class="story-dot" data-index="4"></div>
+          <div class="story-dot" data-index="5"></div>
+          <div class="story-dot" data-index="6"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPDATED: Why Choose Us Section with CORRECTED LAYOUT -->
+  <section class="why-choose-section" id="why-choose">
+    <div class="why-choose-container">
+      <h2 class="section-title">Why <span class="gradient-text">Choose Us</span></h2>
+      
+      <div class="why-choose-layout">
+        <!-- Left Column: Complete AI Suite & Privacy Content -->
+        <div class="why-choose-left">
+          <div class="complete-ai-suite">
+            <h3 class="complete-ai-title">Complete AI Suite</h3>
+            <p class="why-choose-text">
+              We build solutions tailored to your unique business challenges, helping you optimize operations, automate processes, make accurate predictions, enhance efficiency, and stay ahead in a data-driven world.
+            </p>
+          </div>
+          
+          <div class="privacy-section">
+            <div class="privacy-content">
+              <div class="privacy-text">
+                <h3 class="privacy-title">Built With Privacy In Mind</h3>
+                <p class="privacy-intro">
+                  Protecting your data with trusted, industry-standard security practices, with all information securely stored within UAE-based data centers, fully adhering to local regulations and compliance standards.
+                </p>
+              </div>
+              
+              <!-- Privacy Cards on Right Side -->
+              <div class="privacy-cards-container">
+                <!-- Card Navigation Arrows -->
+                <button class="card-nav prev" id="cardPrev">‹</button>
+                <button class="card-nav next" id="cardNext">›</button>
+                
+                <div class="privacy-cards">
+                  <!-- Card 1: Encryption in Transit -->
+                  <div class="privacy-card active">
+                    <div class="card-header">
+                      <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                      </div>
+                      <h4>Encryption in Transit</h4>
+                    </div>
+                    <p>All data transmitted is encrypted using TLS 1.2 or higher.</p>
+                  </div>
+                  
+                  <!-- Card 2: Encryption at Rest -->
+                  <div class="privacy-card">
+                    <div class="card-header">
+                      <div class="card-icon">
+                        <i class="fas fa-lock"></i>
+                      </div>
+                      <h4>Encryption at Rest</h4>
+                    </div>
+                    <p>Data stored is secured with AES-256 encryption, ensuring strong protection against unauthorized access.</p>
+                  </div>
+                  
+                  <!-- Card 3: Anonymization & Access Control -->
+                  <div class="privacy-card">
+                    <div class="card-header">
+                      <div class="card-icon">
+                        <i class="fas fa-user-shield"></i>
+                      </div>
+                      <h4>Anonymization & Access Control</h4>
+                    </div>
+                    <p>Advanced data anonymization techniques with granular access controls to protect sensitive information.</p>
+                  </div>
+                </div>
+                
+                <!-- Card navigation dots -->
+                <div class="card-dots">
+                  <div class="card-dot active"></div>
+                  <div class="card-dot"></div>
+                  <div class="card-dot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Column: Metrics Side by Side -->
+        <div class="why-choose-metrics">
+          <div class="metric-item">
+            <span class="metric-number">12000+</span>
+            <span class="metric-label">Hours Saved</span>
+            <span class="metric-subtitle">Annually</span>
+          </div>
+          
+          <div class="metric-item">
+            <span class="metric-number">85%</span>
+            <span class="metric-label">Reduction</span>
+            <span class="metric-subtitle">In Manual Effort</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIXED Engagement Section -->
+  <section class="engagement-section" id="engagement">
+    <div class="engagement-container">
+      <h2 class="section-title">How Would You Like To <span class="gradient-text">Engage With Us?</span></h2>
+      
+      <div class="engagement-cards">
+        <!-- Co-Sourcing -->
+        <div class="engagement-card">
+          <h3>Co-Sourcing</h3>
+          <ul class="engagement-list">
+            <li>160 hours of dedicated developer deployment</li>
+            <li>7 days free trial</li>
+            <li>Monthly billing</li>
+            <li>Pay as you go</li>
+          </ul>
+          <a href="#contact" class="engagement-btn">Schedule a Call <span class="arrow">→</span></a>
+        </div>
+
+        <!-- Full Development Contract -->
+        <div class="engagement-card">
+          <h3>Full Development Contract</h3>
+          <ul class="engagement-list">
+            <li>Complete control of development</li>
+            <li>Pay as per project</li>
+            <li>Single point of contact</li>
+            <li>Dedicated Scrum allotment</li>
+            <li>Total ownership</li>
+          </ul>
+          <a href="#contact" class="engagement-btn">Schedule a Call <span class="arrow">→</span></a>
+        </div>
+
+        <!-- Need-Based Contract -->
+        <div class="engagement-card">
+          <h3>Need-Based Contract</h3>
+          <ul class="engagement-list">
+            <li>Need-based working</li>
+            <li>Zero hidden cost</li>
+            <li>Pay for actual measurable development hours</li>
+            <li>Monthly billing</li>
+          </ul>
+          <a href="#contact" class="engagement-btn">Schedule a Call <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW LOCATION SECTION -->
+  <section class="location-section" id="location">
+    <div class="location-container">
+      <h2 class="section-title">Our <span class="gradient-text">Locations</span></h2>
+      
+      <div class="location-cards">
+        <!-- Dubai Location -->
+        <div class="location-card">
+          <h3 class="location-title">
+            <span class="gradient-text">Dubai, UAE</span>
+          </h3>
+          
+          <div class="location-details">
+            <div class="location-item">
+              <div class="location-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="location-text">
+                <strong>Address:</strong> 6th floor, Meydan Grandstand, Meydan Road, Nad Al Sheba, Dubai, UAE
+              </div>
+            </div>
+            
+            <div class="location-item">
+              <div class="location-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="location-text">
+                <strong>Phone:</strong> +971 502978387
+              </div>
+            </div>
+            
+            <div class="location-item">
+              <div class="location-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="location-text">
+                <strong>Email:</strong> contact@team.aleddotechnologies.co.in
+              </div>
+            </div>
+            
+            <div class="location-item">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Abu Dhabi Location -->
+        <div class="location-card">
+          <h3 class="location-title">
+            <span class="gradient-text">Kochi, Kerala, India</span>
+          </h3>
+          
+          <div class="location-details">
+            <div class="location-item">
+              <div class="location-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="location-text">
+                <strong>Address:</strong> Aleddo Technologies, Ernakulam, Kerala, India
+              </div>
+            </div>
+            
+            <div class="location-item">
+              <div class="location-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="location-text">
+                <strong>Phone:</strong> +91 9061228972
+              </div>
+            </div>
+            
+            <div class="location-item">
+              <div class="location-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="location-text">
+                <strong>Email:</strong> contact@team.aleddotechnologies.co.in
+              </div>
+            </div>
+            
+            <div class="location-item">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW CONTACT US SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <h2 class="section-title">Contact <span class="gradient-text">Us</span></h2>
+      
+      <div class="contact-layout">
+        <!-- Left Column: Contact Info & Process Steps -->
+        <div class="contact-left">
+          <div>
+            <h3 class="whats-next" id="whatsNext">WHAT'S NEXT?</h3>
+            <p class="contact-intro" id="contactIntro">
+              Ready to transform your business with AI? Get in touch with us today to schedule a consultation and discover how our solutions can drive your success.
+            </p>
+          </div>
+          
+          <div class="process-steps">
+            <!-- Discovery & Strategy -->
+            <div class="process-step" id="processStep1">
+              <div class="step-number">01</div>
+              <div class="step-content">
+                <h4>Discovery & Strategy</h4>
+                <p>We begin by understanding your goals, challenges, and data landscape to craft a clear, result-driven roadmap.</p>
+              </div>
+            </div>
+            
+            <!-- Design & Development -->
+            <div class="process-step" id="processStep2">
+              <div class="step-number">02</div>
+              <div class="step-content">
+                <h4>Design & Development</h4>
+                <p>Our team designs intuitive interfaces and builds scalable, high-performance AI, data & web solutions tailored to your business.</p>
+              </div>
+            </div>
+            
+            <!-- Deployment & Support -->
+            <div class="process-step" id="processStep3">
+              <div class="step-number">03</div>
+              <div class="step-content">
+                <h4>Deployment & Support</h4>
+                <p>We ensure seamless implementation, continuous optimization, and post-launch support to keep your systems running efficiently.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Column: Contact Form -->
+        <div class="contact-form-container" id="contactFormContainer">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" id="firstName" class="form-input" placeholder="Enter your first name" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" id="lastName" class="form-input" placeholder="Enter your last name" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-input" placeholder="Enter your email address" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="mobile" class="form-label">Mobile Number</label>
+              <input type="tel" id="mobile" class="form-input" placeholder="Enter your mobile number" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" placeholder="Tell us about your project or inquiry" rows="5"></textarea>
+            </div>
+            
+            <button type="submit" class="contact-submit-btn">
+              CONTACT NOW <span class="arrow">→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 – Aleddo Technologies LLC, 6th floor, Meydan Grandstand, Meydan Road, Nad Al Sheba, Dubai, UAE</p>
+    </div>
+  </footer>
+
+  <!-- UPDATED: SIMPLE SOCIAL MEDIA FLOWER ON RIGHT SIDE - NO MOVEMENT ANIMATIONS -->
+  <div class="social-overlay" id="socialOverlay"></div>
+  
+  <div class="social-flower">
+    <div class="social-main-btn" id="socialMainBtn">
+      <i class="fas fa-share-alt"></i>
+    </div>
+    <div class="social-petals">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/company/aleddotechnologies/" target="_blank" class="social-petal">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/people/Aleddo-Technologies/61564620906625/?mibextid=LQQJ4d&rdid=Fta0a3OFTfFPDGjQ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FhBfUPeBpNwJWbE7X%2F%3Fmibextid%3DLQQJ4d" target="_blank" class="social-petal">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/aleddotechnologies/" target="_blank" class="social-petal">
+        <i class="fab fa-instagram"></i>
+      </a>
+      
+      <!-- WhatsApp (replaces YouTube) -->
+      <a href="https://wa.me/+971502978387" target="_blank" class="social-petal">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Enterprise Detail Modal -->
+  <div class="enterprise-modal" id="enterpriseModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">
+          <span class="gradient-text" id="modalTitle">CUSTOM AI SOLUTIONS</span>
+        </h2>
+        <button class="close-modal" id="closeModal">&times;</button>
+      </div>
+      
+      <div class="modal-body" id="modalBody">
+        <!-- Content will be populated by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Splide JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
